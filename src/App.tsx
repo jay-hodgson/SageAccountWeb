@@ -32,11 +32,11 @@ import LoginPage from './LoginPage'
 import generalTheme from './style/theme'
 
 declare module '@mui/styles/defaultTheme' {
-  // eslint-disable-next-line @typescript-eslint/no-empty-interface (remove this line if you don't have the rule enabled)
+  //  eslint-disable-next-line  @typescript-eslint/no-empty-interface  (remove  this  line  if  you  don't  have  the  rule  enabled)
   interface DefaultTheme extends Theme {}
 }
 
-// theme is a merge of a general theme and particular color pallettesfor the source app
+//  theme  is  a  merge  of  a  general  theme  and  particular  color  pallettesfor  the  source  app
 const theme = createTheme(deepmerge(getSourceAppTheme(), generalTheme))
 
 const App: React.FC = () => {
@@ -98,7 +98,7 @@ const App: React.FC = () => {
                     )
                   }}
                 />
-                {/* check for an access token for any route in the "/authenticated/" path */}
+                {/*  check  for  an  access  token  for  any  route  in  the  "/authenticated/"  path  */}
                 <Route
                   path="/authenticated/"
                   render={routeProps => {
